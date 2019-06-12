@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 63d2d953a32c51d4ba242af9f0d03ea7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - bird: {fileID: 1449953409673345016, guid: 53fed7d1abfc68b4997d8f4f6a0bda26, type: 3}
+  - WinText: {instanceID: 0}
+  - scoreText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
