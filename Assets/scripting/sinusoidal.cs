@@ -10,10 +10,6 @@ public class sinusoidal : MonoBehaviour
 
     public GlobalValues GValueScript;
 
-    public enum Side{LeftSide, RightSide};
-    public Side Direction;
-
-
     Vector3 position;
     // Start is called before the first frame update
     void Start()
@@ -32,29 +28,8 @@ public class sinusoidal : MonoBehaviour
    public void birdMove()
     {
         //position +=transform.right * moveSpeed * Time.deltaTime;
-        if(Direction == Side.LeftSide)
-        {
-            if (transform.position.x >= 35)
-            {
-                gameObject.SetActive(false);
-                GameObject.FindObjectOfType<GameManager>().Birds.Add(gameObject);
-            }
-
-            position += transform.right * GValueScript.MoveSpeed * Time.deltaTime;
-            transform.position = position + transform.up * Mathf.Sin(Time.time * frequency) * magnitude;
-        }else if(Direction == Side.RightSide)
-        {
-            if (transform.position.x <= -35)
-            {
-                gameObject.SetActive(false);
-                gameObject.transform.localScale = Vector3.one;
-                GameObject.FindObjectOfType<GameManager>().Birds.Add(gameObject);
-            }
-
-            position += -transform.right * GValueScript.MoveSpeed * Time.deltaTime;
-            transform.position = position + transform.up * Mathf.Sin(Time.time * frequency) * magnitude;
-        }
-
+        position += transform.right * GValueScript.MoveSpeed * Time.deltaTime;
+        transform.position = position + transform.up * Mathf.Sin(Time.time * frequency) * magnitude;
     }
 
     public void increaseMoveSpeed()

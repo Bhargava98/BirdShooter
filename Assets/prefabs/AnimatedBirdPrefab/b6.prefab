@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 6744537153822909103}
   - component: {fileID: 2248919984723116975}
   - component: {fileID: 2802855942987536854}
+  - component: {fileID: 5999132418387716065}
   - component: {fileID: -5240366218896443346}
-  - component: {fileID: -7842015100967803069}
   m_Layer: 0
   m_Name: b6
   m_TagString: Untagged
@@ -115,6 +115,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   birdFeathers: {fileID: 0}
+--- !u!114 &5999132418387716065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2802855942987536855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 322e5739c31d6144cafc1df4d338ab99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 9
+  frequency: 4
+  magnitude: 3
+  GValueScript: {fileID: 0}
 --- !u!135 &-5240366218896443346
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -128,20 +144,3 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 4.212959
   m_Center: {x: -0.16392088, y: 0, z: 0}
---- !u!114 &-7842015100967803069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2802855942987536855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f548ba783421ffa4c9cdba4a650c969f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 9
-  frequency: 4
-  magnitude: 3
-  GValueScript: {fileID: 0}
-  Direction: 0

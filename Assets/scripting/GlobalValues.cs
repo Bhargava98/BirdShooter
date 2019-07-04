@@ -11,7 +11,7 @@ public class GlobalValues : MonoBehaviour
 
     public void increaseMoveSpeed()
     {
-        MoveSpeed += 0.5f;
+        MoveSpeed += 0.03f;
     }
 
 

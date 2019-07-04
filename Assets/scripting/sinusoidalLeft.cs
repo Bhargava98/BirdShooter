@@ -29,6 +29,7 @@ public class sinusoidalLeft : MonoBehaviour
     {
         //position += -transform.right * moveSpeed * Time.deltaTime;
         position += -transform.right * GValueScript.MoveSpeed * Time.deltaTime;
+
         transform.position = position + transform.up * Mathf.Sin(Time.time * frequency) * magnitude;
     }
 }
